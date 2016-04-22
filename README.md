@@ -1,1 +1,1 @@
-Repositiry created by development site TMP
+The repository is created for development of the site TMP
