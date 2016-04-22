@@ -1,1 +1,1 @@
-Привет этот репозиторий создан для разработки сайта ТМП
+Repositiry created by development site TMP
