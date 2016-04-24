@@ -1,3 +1,49 @@
 .about {
+	min-height: 470px;
+	padding-top: 60px;
+	background: #efefef url("../../img/aboutbg.jpg") repeat;
 	
+	&__title {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 60px;
+		text-align: center;
+		font-size: 44px;
+		text-transform: uppercase;
+		color: #797979;
+	}
+	
+  &__list {
+  	text-align: center;
+  }
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 24%;
+		border-right: 2px solid #ccc;
+	}
+
+	&__item:last-child {
+		border-right: none;	
+	}
+
+	&__item-title {
+		min-height: 70px;
+		padding: 0;
+		margin: 20px 20px;
+		margin-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 22px;
+	}
+
+	&__item-text {
+		margin: 0 40px;
+		margin-top: 20px;
+		padding-bottom: 30px;
+		font-size: 16px;
+		line-height: 16px;
+		text-align: center;
+	}
 }
