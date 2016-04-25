@@ -1,0 +1,89 @@
+.contact {
+	
+	&__inner {
+		position: relative;
+		padding: 40px;
+		margin-left: 30px;
+		width: 370px;
+		background: fade(#fff, 70%);
+		text-align: left;
+		min-height: 170px;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 20px;
+		padding: 0;
+		text-align: center;
+		color: #003cc3;
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+
+	&__manager {
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		padding: 0 20px;
+		margin-left: -120px;
+		display: block;
+		height: 36px;
+		text-decoration: none;
+		color: #fff;
+		background-color: #003cc3;
+		text-align: center;
+		border: 3px solid #d0d0d0;	
+		border-radius: 20px;
+		font-size: 16px;
+		line-height: 37px;
+		text-align: center;
+	}
+
+	&__manager:hover {
+		background: #2384c4;
+	}
+	
+	&__tel-number {
+		margin-top: 10px;
+	}
+
+	&__tel-number, &__e-mail {
+		position: relative;
+		display: block;
+		color: #000;
+		text-decoration: none;
+		padding-left: 40px;
+	}
+
+	&__tel-number::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 20px;
+		left: 0;
+		top: 2px;
+		background: url("../../img/icons.png") no-repeat 3px -3px ;
+
+
+	}
+
+	&__e-mail::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: 0;
+		top: 2px;
+		background: url("../../img/icons.png") no-repeat 2px -28px ;
+
+
+	}
+
+
+}
+
+.map {
+	padding-top: 100px;
+	min-height: 349px;
+	background: url("../../img/map.jpg") no-repeat center top;
+}

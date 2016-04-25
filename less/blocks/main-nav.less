@@ -1,0 +1,61 @@
+.main-nav {
+
+	&__list {
+		position: relative;
+		margin: 0;
+		margin-bottom: 85px;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	
+	&__list::after {
+		content: '';
+		position: absolute;
+		width: 31px;
+		height: 15px;
+		top: 80px;
+		left: 50%;
+		margin-left: -15px;
+		background: url("../../img/down.png") no-repeat;
+	}
+	
+	&__item {
+		margin: 0 25px;
+		padding: 0;
+		display: inline-block;
+	}
+
+	&__item a, &__order a {
+		display: block;
+		width: 175px;
+		height: 40px;
+		border: 2px solid #fff;
+		border-radius: 23px;
+		color: #fff;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 40px;
+		text-transform: uppercase;
+		background-color: fade(#00105a, 50%);
+	}
+
+	&__item a:hover {
+		background-color: fade(#003cc3, 50%);
+	}
+
+	&__order {
+		text-align: center;
+	}
+
+	&__order a {
+		margin: 0 auto;
+		background-color: fade(#ff0030, 25%);;
+	}
+
+	&__order a:hover {
+	background-color: fade(#ff00d8, 50%);
+	}
+
+}
