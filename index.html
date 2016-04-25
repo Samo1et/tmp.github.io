@@ -162,25 +162,25 @@
 						
 						<form action="echo">
 							<div class="form__col-1">
-								<label for="">
+								<label class="form-company">
 									<input type="text" placeholder="Компания">
 								</label>
 								
-								<label for="">
-									<input type="text" placeholder="Контактное лицо">
+								<label class="form__manager">
+									<input type="text" placeholder="Контактное лицо" required>
 								</label>
 							</div>
 							<div class="form__col-2">
-								<label for="">
-									<input type="text" placeholder="Телефон">
+								<label class="form__number">
+									<input type="text" placeholder="Телефон" required>
 								</label>
 								
-								<label for="">
-									<input type="text" placeholder="E-mail">
+								<label class="form__email">
+									<input type="text" placeholder="E-mail" required>
 								</label>
 							</div>
 							<div class="form__col-3">
-								<textarea name="" id="" cols="60" rows="4">Сообщение</textarea>
+								<textarea name="Сообщение" id="massage" cols="60" rows="4">Сообщение</textarea>
 								<input type="submit" value="Отправить">
 							</div>
 						</form>
@@ -189,41 +189,49 @@
 
 				<section class="contact">
 					<div class="map">
-						<div class="contact_inner">
-							<h2 class="contact__title title-blue">Контакты</h2>
-							<div class="contact_address">
-								<span><b>Офис:</b> ул. Ракетная, 17 оф. 4</span>
-								<span><b>Производство:</b> ул. Ракетная, 17</span>
+						<div class="container">
+							<div class="contact__inner">
+							<h2 class="contact__title">Контакты</h2>
+								<div class="contact_address">
+									<span><b>Офис:</b> ул. Ракетная, 17 оф. 4</span>
+									<span><b>Производство:</b> ул. Ракетная, 17</span>
+								</div>
+								<a href="tel:83822123-456" class="contact__tel-number">8(3822)123-456</a>
+								<a href="mailto:tmp@mail.ru" class="contact__e-mail">tmp@mail.ru</a>
+								<a href="#" class="contact__manager">Менеджеры направлений</a>
 							</div>
-							<a href="tel:83822123-456" class="contact__tel-number">8(3822)123-456</a>
-							<a href="mailto:tmp@mail.ru" class="contact__e-mail">tmp@mail.ru</a>
-							<div class="contact__subtitle subtitle">Менеджеры направлений</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="subnav">
-					<ul class="subnav__list">
-						<li class="subnav__item"><a href="#" class="subnav__link">Продукция</a></li>
-						<li class="subnav__item"><a href="#" class="subnav__link">О компании</a></li>
-						<li class="subnav__item"><a href="#" class="subnav__link">Сотрудничество</a></li>
-						<li class="subnav__item"><a href="#" class="subnav__link">Вопрос - ответ</a></li>
-						<li class="subnav__item"><a href="#" class="subnav__link">Контакты</a></li>
-					</ul>
-
-					<div class="subnav__order">On-line заказ</div>
-				</section>
-
 				<section class="page-footer">
-					<div class="page-foter__addres">
-						г. Томск, ул. Ракетная, 17
-						E-mail: 60@0070.ru
+					<div class="subnav">
+						<div class="container">
+							<ul class="subnav__list">
+								<li class="subnav__item"><a href="#" class="subnav__link">Продукция</a></li>
+								<li class="subnav__item"><a href="#" class="subnav__link">О компании</a></li>
+								<li class="subnav__item"><a href="#" class="subnav__link">Сотрудничество</a></li>
+								<li class="subnav__item"><a href="#" class="subnav__link">Вопрос - ответ</a></li>
+								<li class="subnav__item"><a href="#" class="subnav__link">Контакты</a></li>
+							</ul>
+
+							<a class="subnav__order" href="#">On-line заказ</a>
+						</div>
 					</div>
-					<div class="page-foter__logo">
-						<div class="page-foter__logo-image"></div>
-						<div class="page-foter__logo-discription">ТомскМеталлоПласт</div>
+					
+					<div class="page-footer__inner">
+						<div class="container">
+							<div class="page-footer__addres">
+								г. Томск, ул. Ракетная, 17
+								E-mail: 60@0070.ru
+							</div>
+							<div class="page-footer__logo">
+								<div class="page-footer__logo-image"></div>
+								<div class="page-footer__logo-discription">ТомскМеталлоПласт</div>
+							</div>
+							<div class="page-footer__number">тел.: 8(3822) 23-12-52</div>
+						</div>
 					</div>
-					<div class="page-foter__number">тел.: 8(3822) 23-12-52</div>
 				</section>
 			</div>
 		</main>

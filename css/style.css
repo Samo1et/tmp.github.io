@@ -443,6 +443,64 @@ textarea {
 .page-footer {
   margin: 0 auto;
 }
+.page-footer__inner {
+  background: #efefef url("../../img/aboutbg.jpg") repeat;
+  min-height: 150px;
+}
+.page-footer__inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page-footer__addres {
+  width: 220px;
+  float: left;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.page-footer__number {
+  float: right;
+  width: 220px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.page-footer__logo {
+  position: relative;
+  width: 700px;
+  float: left;
+  text-align: center;
+  margin-top: 20px;
+}
+.page-footer__logo-image {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 68px;
+  background: url("../../img/logofooter.png") no-repeat center top;
+}
+.page-footer__logo-discription {
+  color: #868686;
+  font-size: 16px;
+}
+.page-footer__logo-discription::after {
+  content: '';
+  position: absolute;
+  width: 325px;
+  height: 2px;
+  top: 50px;
+  left: -2px;
+  background-color: #878787;
+}
+.page-footer__logo-discription::before {
+  content: '';
+  position: absolute;
+  width: 325px;
+  height: 2px;
+  top: 50px;
+  right: -8px;
+  background-color: #878787;
+}
 .main-nav__list {
   position: relative;
   margin: 0;
@@ -740,11 +798,13 @@ textarea {
   display: inline-block;
 }
 .form {
-  padding-top: 80px;
+  padding-top: 90px;
   background: #012a69 url("../../img/formbg.jpg") repeat-x;
+  padding-bottom: 50px;
 }
 .form__title {
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -754,15 +814,182 @@ textarea {
   display: inline-block;
   width: 270px;
   vertical-align: top;
+  margin-right: 5px;
+  margin-left: 30px;
 }
 .form__col-2 {
   display: inline-block;
   width: 270px;
   vertical-align: top;
+  margin-right: 15px;
 }
 .form__col-3 {
   display: inline-block;
   width: 570px;
+}
+.form input,
+.form textarea {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: rgba(108, 189, 238, 0.32);
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: inset 3px 5px 2px rgba(0, 0, 0, 0.25);
+}
+.form textarea {
+  padding: 15px;
+  width: 550px;
+  resize: none;
+}
+.form input {
+  width: 200px;
+  height: 40px;
+  padding-left: 40px;
+}
+.form input[type="submit"] {
+  height: 45px;
+  float: right;
+  border: 2px solid #fff;
+  border-radius: 23px;
+  width: auto;
+  padding: 12px 40px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+.form input[type="submit"]:hover {
+  background: rgba(0, 60, 195, 0.8);
+}
+.contact__inner {
+  position: relative;
+  padding: 40px;
+  margin-left: 30px;
+  width: 370px;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  min-height: 170px;
+}
+.contact__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+  color: #003cc3;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.contact__manager {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  padding: 0 20px;
+  margin-left: -120px;
+  display: block;
+  height: 36px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #003cc3;
+  border: 3px solid #d0d0d0;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 37px;
+  text-align: center;
+}
+.contact__manager:hover {
+  background: #2384c4;
+}
+.contact__tel-number {
+  margin-top: 10px;
+}
+.contact__tel-number,
+.contact__e-mail {
+  position: relative;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding-left: 40px;
+}
+.contact__tel-number::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  left: 0;
+  top: 2px;
+  background: url("../../img/icons.png") no-repeat 3px -3px;
+}
+.contact__e-mail::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 2px;
+  background: url("../../img/icons.png") no-repeat 2px -28px;
+}
+.map {
+  padding-top: 100px;
+  min-height: 349px;
+  background: url("../../img/map.jpg") no-repeat center top;
+}
+.subnav {
+  background-color: #2f2f2f;
+  min-height: 120px;
+}
+.subnav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.subnav__list {
+  float: left;
+  width: 900px;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+}
+.subnav__item {
+  margin: 20px;
+  margin-right: 60px;
+  display: inline-block;
+}
+.subnav__item:last-child {
+  margin-right: 0;
+}
+.subnav__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+.subnav__link:hover {
+  border-bottom: 3px solid #2384c4 ;
+}
+.subnav__order {
+  margin-top: 40px;
+  margin-right: 30px;
+  display: block;
+  float: right;
+  padding: 8px 27px;
+  color: #01b0fc;
+  border: 2px solid #01b0fc;
+  border-radius: 22px;
+  text-decoration: none;
+}
+.subnav__order:hover {
+  color: #e19be9;
+  border: 2px solid #e19be9;
 }
 body {
   margin: 0;
