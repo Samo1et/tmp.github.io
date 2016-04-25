@@ -367,19 +367,19 @@ textarea {
 }
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/opensans.woff") format("woff"), url("../../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/opensanslight.woff") format("woff"), url("../../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "OpenSans";
-  src: url("../../fonts/opensansbold.woff") format("woff"), url("../../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
@@ -387,7 +387,7 @@ textarea {
   margin: 0 auto;
   height: 900px;
   color: #fff;
-  background: #08173d url("../../img/headerbg.jpg") repeat-x center center;
+  background: #08173d url("../img/headerbg.jpg") repeat-x center center;
 }
 .page-header__search {
   position: relative;
@@ -414,7 +414,7 @@ textarea {
   right: 156px;
   width: 25px;
   height: 25px;
-  background: url("../../img/search.png") no-repeat;
+  background: url("../img/search.png") no-repeat;
 }
 .page-header__logo {
   position: relative;
@@ -430,7 +430,7 @@ textarea {
   bottom: 35px;
   left: 50%;
   margin-left: -354px;
-  background: url("../../img/line.png") no-repeat;
+  background: url("../img/line.png") no-repeat;
 }
 .page-header__title {
   text-align: center;
@@ -444,7 +444,7 @@ textarea {
   margin: 0 auto;
 }
 .page-footer__inner {
-  background: #efefef url("../../img/aboutbg.jpg") repeat;
+  background: #efefef url("../img/aboutbg.jpg") repeat;
   min-height: 150px;
 }
 .page-footer__inner::after {
@@ -477,7 +477,7 @@ textarea {
   margin-bottom: 10px;
   width: 50px;
   height: 68px;
-  background: url("../../img/logofooter.png") no-repeat center top;
+  background: url("../img/logofooter.png") no-repeat center top;
 }
 .page-footer__logo-discription {
   color: #868686;
@@ -517,7 +517,7 @@ textarea {
   top: 80px;
   left: 50%;
   margin-left: -15px;
-  background: url("../../img/down.png") no-repeat;
+  background: url("../img/down.png") no-repeat;
 }
 .main-nav__item {
   margin: 0 25px;
@@ -569,7 +569,7 @@ textarea {
   margin-top: 70px;
   width: 1139px;
   height: 341px;
-  background: url("../../img/slider.jpg") no-repeat;
+  background: url("../img/slider.jpg") no-repeat;
 }
 .slider__btn {
   position: absolute;
@@ -581,7 +581,7 @@ textarea {
 .about {
   min-height: 470px;
   padding-top: 60px;
-  background: #efefef url("../../img/aboutbg.jpg") repeat;
+  background: #efefef url("../img/aboutbg.jpg") repeat;
 }
 .about__title {
   margin: 0;
@@ -657,7 +657,7 @@ textarea {
   margin-left: 5px;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -1120px 0;
+  background: url("../img/sprite.jpg") -1120px 0;
 }
 .using__images {
   margin: 0 auto;
@@ -668,37 +668,37 @@ textarea {
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") 0 0;
+  background: url("../img/sprite.jpg") 0 0;
 }
 .using__image-3 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -224px 0;
+  background: url("../img/sprite.jpg") -224px 0;
 }
 .using__image-4 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -448px 0;
+  background: url("../img/sprite.jpg") -448px 0;
 }
 .using__image-5 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -672px 0;
+  background: url("../img/sprite.jpg") -672px 0;
 }
 .using__image-6 {
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -896px 0;
+  background: url("../img/sprite.jpg") -896px 0;
 }
 .parthners {
-  background: #022f6f url("../../img/parthnersbg.jpg");
+  background: #022f6f url("../img/parthnersbg.jpg");
   padding-top: 10px;
 }
 .parthners__title {
@@ -774,7 +774,7 @@ textarea {
   float: left;
   width: 250px;
   height: 200px;
-  background: url("../../img/foto.png") no-repeat;
+  background: url("../img/foto.png") no-repeat;
 }
 .news__item-content {
   width: 280px;
@@ -799,7 +799,7 @@ textarea {
 }
 .form {
   padding-top: 90px;
-  background: #012a69 url("../../img/formbg.jpg") repeat-x;
+  background: #012a69 url("../img/formbg.jpg") repeat-x;
   padding-bottom: 50px;
 }
 .form__title {
@@ -924,7 +924,7 @@ textarea {
   height: 20px;
   left: 0;
   top: 2px;
-  background: url("../../img/icons.png") no-repeat 3px -3px;
+  background: url("../img/icons.png") no-repeat 3px -3px;
 }
 .contact__e-mail::after {
   content: '';
@@ -933,12 +933,12 @@ textarea {
   height: 30px;
   left: 0;
   top: 2px;
-  background: url("../../img/icons.png") no-repeat 2px -28px;
+  background: url("../img/icons.png") no-repeat 2px -28px;
 }
 .map {
   padding-top: 100px;
   min-height: 349px;
-  background: url("../../img/map.jpg") no-repeat center top;
+  background: url("../img/map.jpg") no-repeat center top;
 }
 .subnav {
   background-color: #2f2f2f;
