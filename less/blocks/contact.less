@@ -83,7 +83,18 @@
 }
 
 .map {
+	position: relative;
 	padding-top: 100px;
 	min-height: 349px;
 	background: url("../../img/map.jpg") no-repeat center top;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 92px;
+		height: 150px;
+		top: 30px;
+		left: 57%;
+		background: url("../../img/marker.png") no-repeat;
+	}
 }

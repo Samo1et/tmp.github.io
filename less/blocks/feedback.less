@@ -1,7 +1,7 @@
-.form {
+.feedback {
 	padding-top: 90px;
 	background: #012a69 url("../../img/formbg.jpg") repeat-x;
-	padding-bottom: 50px;
+	padding-bottom: 45px;
 
 	&__title {
 		margin: 0;
@@ -12,7 +12,7 @@
 		text-transform: uppercase;
 	}
 
-	&__col-1 {
+	&__form-col-1 {
 		display: inline-block;	
 		width: 270px;
 		vertical-align: top;
@@ -20,20 +20,18 @@
 		margin-left: 30px;
 	}
 
-	&__col-2 {
+	&__form-col-2 {
 		display: inline-block;							
 		width: 270px;
 		vertical-align: top;
 		margin-right: 15px;
 	}
 
-	&__col-3 {
+	&__form-col-3 {
 		display: inline-block;
 		width: 570px;
 	}
 	
-
-
 	& input, textarea {
 		margin-bottom: 25px;
 		padding-left: 20px;
@@ -55,6 +53,7 @@
 	}
 
 	& input {
+		position: relative;
 		width: 200px;
 		height: 40px;
 		padding-left: 40px;
@@ -78,6 +77,52 @@
 	& input[type="submit"]:hover {
 		background: fade(#003cc3, 80%);
 	}
+
+	& label {
+		position: relative;
+	}
+	
+	&__form-company::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: -1px;
+		left: 6px;
+		background: url("../../img/icons.png") no-repeat -32px 3px;
+	}
+
+	&__form-manager::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 0px;
+		left: 5px;
+		background: url("../../img/icons.png") no-repeat -32px -27px;
+	}
+
+	&__form-number::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 0px;
+		left: 5px;
+		background: url("../../img/icons.png") no-repeat -64px 3px;
+	}
+
+	&__form-email::after {
+		content: '';
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		top: 0px;
+		left: 5px;
+		background: url("../../img/icons.png") no-repeat -64px -27px;
+	}
+
+
 	
 
 }
