@@ -160,27 +160,28 @@
 					<div class="container">
 						<h2 class="form__title">форма обратной связи</h2>
 						
-						<form action="echo">
+						<form  method="POST" id="feedback-form">
 							<div class="form__col-1">
 								<label class="form-company">
-									<input type="text" placeholder="Компания">
+									<input type="text" name="companyFF" placeholder="Компания">
 								</label>
 								
 								<label class="form__manager">
-									<input type="text" placeholder="Контактное лицо" required>
+									<input type="text" name="nameFF" placeholder="Контактное лицо" x-autocompletetype="name" required>
 								</label>
 							</div>
+							
 							<div class="form__col-2">
 								<label class="form__number">
-									<input type="text" placeholder="Телефон" required>
+									<input type="text" name="numberFF" placeholder="Телефон" x-autocompletetype="number" required>
 								</label>
 								
 								<label class="form__email">
-									<input type="text" placeholder="E-mail" required>
+									<input type="text" placeholder="E-mail"  name="contactFF" x-autocompletetype="email" required>
 								</label>
 							</div>
 							<div class="form__col-3">
-								<textarea name="Сообщение" id="massage" cols="60" rows="4">Сообщение</textarea>
+								<textarea name="messageFF" cols="60" rows="4" required>Сообщение</textarea>
 								<input type="submit" value="Отправить">
 							</div>
 						</form>
@@ -203,37 +204,55 @@
 						</div>
 					</div>
 				</section>
+			</main>
+			
+			<footer class="page-footer">
+				<div class="subnav">
+					<div class="container">
+						<ul class="subnav__list">
+							<li class="subnav__item"><a href="#" class="subnav__link">Продукция</a></li>
+							<li class="subnav__item"><a href="#" class="subnav__link">О компании</a></li>
+							<li class="subnav__item"><a href="#" class="subnav__link">Сотрудничество</a></li>
+							<li class="subnav__item"><a href="#" class="subnav__link">Вопрос - ответ</a></li>
+							<li class="subnav__item"><a href="#" class="subnav__link">Контакты</a></li>
+						</ul>
 
-				<section class="page-footer">
-					<div class="subnav">
-						<div class="container">
-							<ul class="subnav__list">
-								<li class="subnav__item"><a href="#" class="subnav__link">Продукция</a></li>
-								<li class="subnav__item"><a href="#" class="subnav__link">О компании</a></li>
-								<li class="subnav__item"><a href="#" class="subnav__link">Сотрудничество</a></li>
-								<li class="subnav__item"><a href="#" class="subnav__link">Вопрос - ответ</a></li>
-								<li class="subnav__item"><a href="#" class="subnav__link">Контакты</a></li>
-							</ul>
+						<a class="subnav__order" href="#">On-line заказ</a>
+					</div>
+				</div>
 
-							<a class="subnav__order" href="#">On-line заказ</a>
+				<div class="page-footer__inner">
+					<div class="container">
+						<div class="page-footer__addres">
+							г. Томск, ул. Ракетная, 17
+							E-mail: 60@0070.ru
 						</div>
-					</div>
-					
-					<div class="page-footer__inner">
-						<div class="container">
-							<div class="page-footer__addres">
-								г. Томск, ул. Ракетная, 17
-								E-mail: 60@0070.ru
-							</div>
-							<div class="page-footer__logo">
-								<div class="page-footer__logo-image"></div>
-								<div class="page-footer__logo-discription">ТомскМеталлоПласт</div>
-							</div>
-							<div class="page-footer__number">тел.: 8(3822) 23-12-52</div>
+						<div class="page-footer__logo">
+							<div class="page-footer__logo-image"></div>
+							<div class="page-footer__logo-discription">ТомскМеталлоПласт</div>
 						</div>
+						<div class="page-footer__number">тел.: 8(3822) 23-12-52</div>
 					</div>
-				</section>
-			</div>
-		</main>
+				</div>
+			</footer>
+			<script>
+				document.getElementById('feedback-form').addEventListener('submit', function(evt){
+					var http = new XMLHttpRequest(), f = this;
+					evt.preventDefault();
+					http.open("POST", "contacts.php", true);
+					http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					http.send("nameFF=" + f.nameFF.value + "&contactFF=" + f.contactFF.value + "&companyFF=" + f.companyFF.value + "&numberFF=" +f.numberFF.value + "&messageFF=" + f.messageFF.value);
+					http.onreadystatechange = function() {
+						if (http.readyState == 4 && http.status == 200) {
+							alert(http.responseText + ', Ваше сообщение получено.\nНаши специалисты ответят Вам в течении 2-х дней.\nБлагодарим за интерес к нашей фирме!');    
+							f.messageFF.removeAttribute('value'); // очистить поле сообщения (две строки)
+							f.messageFF.value='';
+						}
+					  }
+							http.onerror = function() {
+							alert('Извините, данные не были переданы');
+					}
+				}, false);
+			</script>
 		</body>
 		</html>		
