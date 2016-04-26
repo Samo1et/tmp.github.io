@@ -872,6 +872,7 @@ textarea {
   text-transform: uppercase;
   margin-top: 35px;
   margin-bottom: 15px;
+  padding-top: 20px;
   font-size: 24px;
 }
 .parthners__link-text {
@@ -1202,7 +1203,8 @@ textarea {
   background: url("../../img/aboutbg.jpg");
   margin-top: -10px;
 }
-.products__item {
+.products__item,
+.products__masterbatch {
   margin-right: 20px;
   padding: 25px;
   padding-top: 30px;
@@ -1212,6 +1214,12 @@ textarea {
   text-align: center;
   vertical-align: top;
   margin-bottom: 100px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+}
+.products__masterbatch:hover {
+  box-shadow: 0 0 5px #0083c6;
 }
 .products__item:last-child {
   padding-top: 10px;
