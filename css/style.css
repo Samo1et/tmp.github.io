@@ -1043,14 +1043,19 @@ textarea {
   left: 5px;
   background: url("../../img/icons.png") no-repeat -64px -27px;
 }
-.contact__inner {
+.contact {
   position: relative;
+}
+.contact__inner {
+  position: absolute;
+  top: 80px;
   padding: 40px;
   margin-left: 30px;
   width: 370px;
   background: rgba(255, 255, 255, 0.7);
   text-align: left;
   min-height: 170px;
+  z-index: 100;
 }
 .contact__title {
   margin: 0;
