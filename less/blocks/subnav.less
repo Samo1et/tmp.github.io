@@ -5,26 +5,45 @@
 
 	&__list {
 		float: left;
-		width: 900px;
+		width: 920px;
 		margin: 0;
-		margin-left: 40px;
+		margin-left: 30px;
 		padding: 0;
 
 	}
 
 	&__item {
+		position: relative;
 		margin: 20px;
-		margin-right: 60px;
+		margin-top: 45px;
+		padding: 0;
+		padding-right: 38px;
 		display: inline-block;
+	}
+
+	&__item::before {
+		content: '';
+		position: absolute;
+		right: -10px;
+		width: 1px;
+		height: 35px;
+		background-color: #000;
+		border-right: 1px solid #757575;
 	}
 
 	&__item:last-child {
 		margin-right: 0;
 	}
 
+	&__item:last-child::before {
+		content: '';
+		width: 0;
+		height: 0;
+	}
+
 	&__link {
 		display: block;
-		padding-top: 30px;
+		padding-top: 8px;
 		padding-bottom: 8px;
 		color: #fff;
 		text-decoration: none;
@@ -33,7 +52,7 @@
 	}
 
 	&__link:hover {
-		border-bottom: 3px solid #2384c4 ;
+		border-bottom: 3px solid #2384c4;
 	}
 
 	&__order {

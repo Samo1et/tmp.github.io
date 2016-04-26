@@ -1,0 +1,95 @@
+.header-inner {
+	background: #001755 url("../../img/headerinnerbg.jpg") center;
+	.clearfix();
+	min-height: 250px;
+
+	&__serch {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 300px;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	&__serch input {
+		margin-right: 140px;
+		width: 200px;
+		padding: 5px 20px;
+		padding-right: 50px;
+		margin-top: 33px;
+		margin-bottom: 44px;
+		border: none;
+		border-radius: 20px;
+		outline: none;
+		background: fade(#6cbdee, 30%);
+		color: #fff;
+		font-family: Optima Cyr;
+		font-size: 16px;
+	}
+
+		&__search::after {
+		content: '';
+		position: absolute;
+		top: 38px;
+		right: 156px;
+		width: 25px;
+		height: 25px;
+		background: url("../../img/search.png") no-repeat;
+	} 
+
+	&__logo {
+		margin-bottom: 32px;
+		display: inline-block;
+		vertical-align: top;
+		width: 540px;
+		text-align: center;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: 20px;
+		padding: 0;
+		margin: 0;
+		margin-top: 5px;
+	}
+
+	&__contact {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 60px;
+		text-align: right;
+		width: 300px;
+	}
+
+	&__number {
+		margin-bottom: 25px;
+		color: #fff;
+		font-size: 30px;
+		line-height: 22px;
+	}
+
+	&__number::after {
+		content: '';
+		position: absolute;
+		top: -35px;
+		left: 10px;
+		width: 64px;
+		height: 64px;
+		background: url("../../img/phone.png") no-repeat;		
+	}
+
+	&__address, &__email  {
+		margin-bottom: 10px;
+		font-size: 16px;
+		line-height: 22px;
+		color: #59a9ff;
+	}
+}
+
+
+
+
+
+
