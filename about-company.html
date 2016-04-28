@@ -23,16 +23,16 @@
 			<nav class="inner-nav">
 				<ul class="inner-nav__list">
 					<li class="inner-nav__item">
-						<a class="inner-nav__link inner-nav__link--active">продукция</a>
+						<a href="products.html" class="inner-nav__link">продукция</a>
 					</li>
 					<li class="inner-nav__item">
-						<a href="about-company.html" class="inner-nav__link">о компании</a>
+						<a  class="inner-nav__link inner-nav__link--active">о компании</a>
 					</li>
 					<li class="inner-nav__item">
 						<a href="customers.html" class="inner-nav__link">сотрудничество</a>
 					</li>
 					<li class="inner-nav__item">
-						<a href="#" class="inner-nav__link">новости</a>
+						<a href="news-block.html" class="inner-nav__link">новости</a>
 					</li>
 					<li class="inner-nav__item">
 						<a href="contact.html" class="inner-nav__link">контакты</a>
@@ -47,43 +47,40 @@
 	</header>
 
 	<main>
-		<section class="products">
+		<section class="about-company">
 			<div class="container">
 				<div class="breadcrumbs">	
-					<a class="breadcrumbs__link">Продукция</a>	
-				</div>
-				
-				<a class="products__masterbatch" href="masterbatch.html">
-					<div class="products__title">Masterbatch</div>
-					<div class="products__discription">
-						Суперконцентраты белые, черные и цветные для высококачественного окрашевания полиолефинов
-					</div>
-					<div class="products__image">
-						<img src="img/masterbatch.png" alt="masterbatch">
-					</div>
-				</a>
-
-				<div class="products__item">
-					<div class="products__title">Composite</div>
-					<div class="products__discription">
-						Композиты - смесь полимеров и добавок с заданными свойствами для производства готовой продукции
-					</div>
-					<div class="products__image">
-						<img src="img/composite.png" alt="composite">
-					</div>
+					<a class="breadcrumbs__link">О компаниии</a>	
 				</div>
 
-				<div class="products__item">
-					<div class="products__title">Модифицирующие добавки</div>
-					<div class="products__discription">
-						Краткое описание содержания раздела. Чтобы пользователь представлял о чем пойдет речь
+				<div class="about-company__content">
+					<h2 class="about-company__title">
+						компания сегодня. направления деятельности
+					</h2>
+
+					<div class="about-company__images">
+						<img src="img/company_1.jpg" alt="">
+						<img src="img/company_2.jpg" alt="">
+						<img src="img/company_3.jpg" alt="">
 					</div>
-					<div class="products__image">
-						<img src="img/supplements.png" alt="supplements">
+
+					<div class="about-company__text">
+						<b>ООО «ТомскМеталлоПласт» - молодая динамично развивающаяся производственная компания. Структура производства расположена на 3,8га собственных земель, прилегает железнодорожный тупик. </b>
+
+						<P>Направления деятельности компании различны. В марте 2015 г. было открыто производство черных суперконцентратов на основе полиолефинов под названием «FILLEN MASTERBATCH». Нами разработано и производится несколько марок суперконцентратов. </P>
+						<P>Благодаря высокому качеству продукции  и конкурентной цене мы смогли за короткий период времени выстроить долговременное сотрудничество с крупными производителями пленочной и трубной продукций по всей России. География продаж обширна. Также активно сотрудничаем с Казахстаном. При наращивании объемов производства мы не теряем качество продукции. Готовится к запуску производство композиционных материалов на основе полиэтилена, полипропилена.</P>
 					</div>
+
+					<div class="about-company__slider-parthners">
+						<h2 class="about-company__title title">наши партнеры</h2>
+						<div class="about-company__slider"></div>
+					</div>
+
+
 				</div>
-			</div>
-		</section>	
+
+			</div>	
+		</section>
 
 		<section class="news">
 			<div class="container">
@@ -114,7 +111,7 @@
 						</li>
 					</ul>
 				</article>
-				<a class="news__btn btn" href="#">Архив новостей</a>
+				<a class="news__btn btn" href="news-block.html">Архив новостей</a>
 			</div>
 		</section>
 
@@ -155,14 +152,14 @@
 		<div class="subnav">
 			<div class="container">
 				<ul class="subnav__list">
-					<li class="subnav__item"><a class="subnav__link">Продукция</a></li>
-					<li class="subnav__item"><a href="about.html" class="subnav__link">О компании</a></li>
+					<li class="subnav__item"><a href="products.html" class="subnav__link">Продукция</a></li>
+					<li class="subnav__item"><a href="about-company.html" class="subnav__link">О компании</a></li>
 					<li class="subnav__item"><a href="customers.html" class="subnav__link">Сотрудничество</a></li>
-					<li class="subnav__item"><a href="#" class="subnav__link">Вопрос - ответ</a></li>
-					<li class="subnav__item"><a href="contact.html" class="subnav__link">Контакты</a></li>
+					<li class="subnav__item"><a href="faq.html" class="subnav__link">Вопрос - ответ</a></li>
+					<li class="subnav__item"><a href="contact.php" class="subnav__link">Контакты</a></li>
 				</ul>
 
-				<a class="subnav__order" href="#">On-line заказ</a>
+				<a class="subnav__order" href="order.html">On-line заказ</a>
 			</div>
 		</div>
 
