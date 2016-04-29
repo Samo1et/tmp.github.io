@@ -60,18 +60,17 @@
 					<div class="page-order__tabs-content">
 						<form class="page-order__form" action="echo">
 							<h2 class="page-order__form-title">выбор продукции</h2>
-							
-							<label for="black">
-								<input type="checkbox" name="black" id="black" checked> Черные суперконцентраты
-							</label>
+												
+							<input type="checkbox" name="black" id="black" checked> 
+							<label class="page-order__form-checkbox" for="black" >Черные суперконцентраты</label>
 							
 							<div class="page-order__form-inner">
 								<select name="color" id="color">
-									<option value="Выберите марку"></option>
+									<option value="Выберите марку">Выберите марку</option>
 								</select>		
 								
-								<label>
-									<input type="text" name="mass" placeholer="Кол-во"> Кг.	
+								<label >
+									<input type="number" name="mass" placeholder="Кол-во"> Кг.	
 								</label>
 								
 								<button class="page-order__form-btn">Добавить</button>	
@@ -80,31 +79,28 @@
 							</div>
 							
 							<div class="page-order__form-inner">
-								<label>	
-									<input type="checkbox" name="white" id="white"> Белые суперконцентраты
-								</label>	
+								<input type="checkbox" name="white" id="white"> 
+								<label class="page-order__form-checkbox" for="white">Белые суперконцентраты</label>	
 							</div>
 							
 							<div class="page-order__form-inner">
-								<label>
-									<input type="checkbox" name="colors" id="colors"> Цветные суперконцентраты
-								</label>	
+								
+									<input type="checkbox" name="colors" id="colors">
+								<label class="page-order__form-checkbox" for="colors"> Цветные суперконцентраты</label>	
 							</div>
 							
 							<h2 class="page-order__form-title">Доставка</h2>	
 
 							<div class="page-order__form-inner">
-								<label class="page-order__form-radio">
-									<input type="radio" name="delivery" id="delivery"> Самовывоз
-								</label>
 								
-								<label class="page-order__form-radio">
-									<input type="radio" name="delivery" id="delivery"> Транспортной компанией по России
-								</label>	
+								<input type="radio" name="delivery" id="delivery" checked> 
+								<label class="page-order__form-radio" for="delivery" >Самовывоз</label>
 								
-								<label class="page-order__form-radio">
-									<input type="radio" name="delivery" id="delivery"> Доставка по городу Томску
-								</label>			
+								<input type="radio" name="delivery" id="company"> 
+								<label class="page-order__form-radio" for="company">Транспортной компанией по России</label>	
+								
+								<input type="radio" name="delivery" id="incity"> 
+								<label class="page-order__form-radio" for="incity">Доставка по городу Томску</label>			
 							</div>						
 						</form>
 						<div class="page-order__tabs-sub-content">Заказ и отгрузка товара возможна только кратно мешкам весом 30 кг.</div>							
