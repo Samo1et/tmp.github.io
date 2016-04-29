@@ -1788,6 +1788,9 @@ textarea {
   background: url("../../img/aboutbg.jpg");
   margin-top: -10px;
 }
+.contact-page__tabs {
+  margin-bottom: 40px;
+}
 .contact-page__tabs-link {
   margin-right: 24px;
   display: inline-block;
