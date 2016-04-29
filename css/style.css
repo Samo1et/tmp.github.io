@@ -542,6 +542,7 @@ textarea {
 .header-inner {
   background: #001755 url("../../img/headerinnerbg.jpg") center;
   min-height: 250px;
+  position: relative;
 }
 .header-inner::after {
   content: "";
@@ -634,6 +635,8 @@ textarea {
   color: #59a9ff;
 }
 .inner-nav {
+  position: absolute;
+  bottom: -15px;
   margin: 0;
   padding: 0;
   margin-bottom: 0px;
@@ -656,11 +659,13 @@ textarea {
 .inner-nav__item::before {
   content: '';
   position: absolute;
+  top: -4px;
   right: -1px;
   width: 1px;
   height: 35px;
   background-color: #001b61;
   border-right: 1px solid #0068ff;
+  z-index: 1000;
 }
 .inner-nav__item:last-child::before {
   content: '';
@@ -1388,6 +1393,22 @@ textarea {
 .masterbatch-black__order-text {
   padding: 40px;
 }
+.masterbatch-black__catalog-subtext {
+  position: relative;
+  padding: 40px 70px;
+  margin-left: 40px;
+  font-size: 20px;
+  color: #0039c8;
+}
+.masterbatch-black__catalog-subtext::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/icons.png") no-repeat -240px 0px;
+}
 .about-company {
   background: url("../../img/aboutbg.jpg");
   margin-top: -10px;
@@ -1762,6 +1783,51 @@ textarea {
 }
 .single-news__item-date {
   font-size: 14px;
+}
+.contact-page {
+  background: url("../../img/aboutbg.jpg");
+  margin-top: -10px;
+}
+.contact-page__tabs-link {
+  margin-right: 24px;
+  display: inline-block;
+  background: #dadada;
+  padding: 0 20px;
+  padding-top: 30px;
+  width: 237px;
+  height: 62px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  font-size: 30px;
+  color: #8c8c8c;
+}
+.contact-page__tabs-link--active {
+  background: #fff;
+  color: #000;
+}
+.contact-page__tabs-link:last-child {
+  margin-right: 0;
+}
+.contact-page__tabs-content {
+  background: #fff;
+}
+.contact-page__tabs-col {
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  text-align: center;
+}
+.contact-page__tabs-text {
+  min-height: 50px;
+  margin: 20px 20px;
+  padding: 0 20px;
+}
+.contact-page__tabs-text--border {
+  border-top: 5px solid #d1d1d1;
+  border-bottom: 5px solid #d1d1d1;
 }
 body {
   margin: 0;
