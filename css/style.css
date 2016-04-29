@@ -563,7 +563,7 @@ textarea {
   right: 40px;
   width: 25px;
   height: 25px;
-  background: url("../../img/search.png");
+  background: url("../img/search.png");
 }
 .header-inner__serch input {
   margin-right: 140px;
@@ -1285,7 +1285,7 @@ textarea {
   color: #0083c6;
 }
 .masterbatch {
-  background: url("../../img/aboutbg.jpg") repeat;
+  background: url("../img/aboutbg.jpg") repeat;
   margin-top: -10px;
 }
 .masterbatch__tabs {
@@ -1361,7 +1361,7 @@ textarea {
   border-top: 5px solid #dadada;
 }
 .masterbatch-black {
-  background: url("../../img/aboutbg.jpg") repeat;
+  background: url("../img/aboutbg.jpg") repeat;
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1389,7 +1389,7 @@ textarea {
   padding: 40px;
 }
 .about-company {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1419,7 +1419,7 @@ textarea {
   border-top: 5px solid #dadada;
 }
 .customers {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1480,7 +1480,7 @@ textarea {
   background: #0039c8;
 }
 .page-order {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1552,7 +1552,7 @@ textarea {
   left: -30px;
   width: 20px;
   height: 20px;
-  background: url("../../img/icons.png") no-repeat -164px -2px;
+  background: url("../img/icons.png") no-repeat -164px -2px;
 }
 .page-order__form-inner {
   padding: 40px 0;
@@ -1650,10 +1650,10 @@ textarea {
   left: 30px;
   width: 50px;
   height: 50px;
-  background: url("../../img/icons.png") no-repeat -240px 0px;
+  background: url("../img/icons.png") no-repeat -240px 0px;
 }
 .news-block {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
 }
 .news-block__list ul {
@@ -1727,7 +1727,7 @@ textarea {
   text-align: center;
 }
 .single-news {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
