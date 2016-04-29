@@ -5,6 +5,7 @@
 	margin-bottom: 35px;
 	color: #858585;
 	font-size: 14px;	
+	text-decoration: none;
 
 	&::after {
 		content: '';
@@ -14,5 +15,15 @@
 		width: 40px;
 		height: 30px;
 		background: url("../../img/icons.png") no-repeat -32px*4 -28px;
+	}
+
+	&__link {
+		padding-right: 10px;
+		text-decoration: none;
+		color: #858585;
+	}
+
+	&__link--active:hover {
+		color: #0083c6;
 	}
 }

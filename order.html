@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>On-line заказ</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header-inner">
+		<div class="container">
+			<div class="header-inner__serch">
+				<input type="text" placeholder="Поиск">	
+			</div>
+			<div class="header-inner__logo">
+				<a href="index.html"><img src="img/logo_s.png" alt="Логотип"></a>
+				<h1 class="header-inner__title">Томск Металло Пласт</h1>
+			</div>
+			<div class="header-inner__contact">
+					<div class="header-inner__number">8 (3822) 23-12-52</div>
+					<div class="header-inner__address">г. Томск, ул. Ракетная, 17</div>
+					<div class="header-inner__email">E-mail: 60@0070.ru</div>	
+			</div>
+			<nav class="inner-nav">
+				<ul class="inner-nav__list">
+					<li class="inner-nav__item">
+						<a href="products.html" class="inner-nav__link">продукция</a>
+					</li>
+					<li class="inner-nav__item">
+						<a href="about-company.html" class="inner-nav__link">о компании</a>
+					</li>
+					<li class="inner-nav__item">
+						<a href="customers.html" class="inner-nav__link">сотрудничество</a>
+					</li>
+					<li class="inner-nav__item">
+						<a href="news-block.html" class="inner-nav__link">новости</a>
+					</li>
+					<li class="inner-nav__item">
+						<a href="contact.html" class="inner-nav__link">контакты</a>
+					</li>
+					<li class="inner-nav__item">
+						<a class="inner-nav__link inner-nav__link--active">on-line заказ</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<main>
+		<section class="page-order">
+			<div class="container">
+				<div class="breadcrumbs">	
+					<a class="breadcrumbs__link">On-lone заказ продукции</a>	
+				</div>
+				<div class="page-order__tabs">
+					<div class="page-order__tabs-header">
+						<a class="page-order__tabs-link page-order__tabs-link--active">Заказ продукции</a>
+						<a class="page-order__tabs-link">Заказ индивидуальной рецептуры</a>
+					</div>
+					<div class="page-order__tabs-content">
+						<form class="page-order__form" action="echo">
+							<h2 class="page-order__form-title">выбор продукции</h2>
+												
+							<input type="checkbox" name="black" id="black" checked> 
+							<label class="page-order__form-checkbox" for="black" >Черные суперконцентраты</label>
+							
+							<div class="page-order__form-inner">
+								<select name="color" id="color">
+									<option value="Выберите марку">Выберите марку</option>
+								</select>		
+								
+								<label >
+									<input type="number" name="mass" placeholder="Кол-во"> Кг.	
+								</label>
+								
+								<button class="page-order__form-btn">Добавить</button>	
+								
+								<a class="page-order__form-link" href="products.html">Подробнее о марках</a>
+							</div>
+							
+							<div class="page-order__form-inner">
+								<input type="checkbox" name="white" id="white"> 
+								<label class="page-order__form-checkbox" for="white">Белые суперконцентраты</label>	
+							</div>
+							
+							<div class="page-order__form-inner">
+								
+									<input type="checkbox" name="colors" id="colors">
+								<label class="page-order__form-checkbox" for="colors"> Цветные суперконцентраты</label>	
+							</div>
+							
+							<h2 class="page-order__form-title">Доставка</h2>	
+
+							<div class="page-order__form-inner">
+								
+								<input type="radio" name="delivery" id="delivery" checked> 
+								<label class="page-order__form-radio" for="delivery" >Самовывоз</label>
+								
+								<input type="radio" name="delivery" id="company"> 
+								<label class="page-order__form-radio" for="company">Транспортной компанией по России</label>	
+								
+								<input type="radio" name="delivery" id="incity"> 
+								<label class="page-order__form-radio" for="incity">Доставка по городу Томску</label>			
+							</div>						
+						</form>
+						<div class="page-order__tabs-sub-content">Заказ и отгрузка товара возможна только кратно мешкам весом 30 кг.</div>							
+					</div>
+				</div>
+			</div>	
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="subnav">
+			<div class="container">
+				<ul class="subnav__list">
+					<li class="subnav__item"><a href="products.html" class="subnav__link">Продукция</a></li>
+					<li class="subnav__item"><a href="about-company.html" class="subnav__link">О компании</a></li>
+					<li class="subnav__item"><a href="customers.html" class="subnav__link">Сотрудничество</a></li>
+					<li class="subnav__item"><a href="news-block.html" class="subnav__link">Новости</a></li>
+					<li class="subnav__item"><a href="contact.php" class="subnav__link">Контакты</a></li>
+				</ul>
+
+				<a class="subnav__order" href="order.html">On-line заказ</a>
+			</div>
+		</div>
+
+		<div class="page-footer__inner">
+			<div class="container">
+				<div class="page-footer__addres">
+					г. Томск, ул. Ракетная, 17
+					E-mail: 60@0070.ru
+				</div>
+				<div class="page-footer__logo">
+					<div class="page-footer__logo-image"></div>
+					<div class="page-footer__logo-discription">ТомскМеталлоПласт</div>
+				</div>
+				<div class="page-footer__number">тел.: 8(3822) 23-12-52</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
