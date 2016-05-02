@@ -1789,7 +1789,11 @@ textarea {
   margin-top: -10px;
 }
 .contact-page__tabs {
+<<<<<<< HEAD
   margin-bottom: 90px;
+=======
+  margin-bottom: 40px;
+>>>>>>> 6fcbdb660e80eed2e3405ee3d9643a63ebb5b61f
 }
 .contact-page__tabs-link {
   margin-right: 24px;
