@@ -1788,6 +1788,9 @@ textarea {
   background: url("../../img/aboutbg.jpg");
   margin-top: -10px;
 }
+.contact-page__tabs {
+  margin-bottom: 90px;
+}
 .contact-page__tabs-link {
   margin-right: 24px;
   display: inline-block;
@@ -1812,6 +1815,9 @@ textarea {
 }
 .contact-page__tabs-content {
   background: #fff;
+  font-size: 18px;
+  line-height: 20.8px;
+  padding-bottom: 45px;
 }
 .contact-page__tabs-col {
   margin-top: 30px;
@@ -1822,12 +1828,105 @@ textarea {
 }
 .contact-page__tabs-text {
   min-height: 50px;
-  margin: 20px 20px;
-  padding: 0 20px;
+  margin: 0px 20px;
+  padding: 20px 20px;
 }
 .contact-page__tabs-text--border {
   border-top: 5px solid #d1d1d1;
   border-bottom: 5px solid #d1d1d1;
+}
+.contact-page__sales {
+  border-top: 5px solid #dadada;
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+.contact-page__sales-title {
+  margin-top: -30px;
+}
+.contact-page__sales-item:first-child {
+  border-bottom: 4px solid #dadada;
+  width: 100%;
+}
+.contact-page__sales-item:first-child .contact-page__sales-img {
+  display: inline-block;
+  width: 33%;
+  width: 200px;
+  height: 200px;
+}
+.contact-page__sales-item:first-child .contact-page__sales-name {
+  display: inline-block;
+  width: 600px;
+  width: 200px;
+  height: 200px;
+}
+.contact-page__sales-item:first-child .contact-page__sales-contact {
+  display: inline-block;
+  width: 400px;
+}
+.contact-page__sales-item {
+  display: inline-block;
+  width: 45%;
+  margin-right: 20px;
+}
+.contact-page__sales-item:last-child {
+  margin-right: 0;
+}
+.contact-page__sales-img {
+  width: 200px;
+  height: 250px;
+  margin-right: 40px;
+  float: left;
+  vertical-align: middle;
+}
+.contact-page__production {
+  border-top: 5px solid #dadada;
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 0 40px 40px 40px;
+}
+.contact-page__production-title {
+  margin-top: -30px;
+}
+.contact-page__production-item {
+  display: inline-block;
+  width: 45%;
+  margin-right: 20px;
+}
+.contact-page__production-img {
+  width: 200px;
+  height: 250px;
+  margin-right: 40px;
+  float: left;
+  vertical-align: middle;
+}
+.contact-page__managers {
+  border-top: 5px solid #dadada;
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 0 40px 40px 40px;
+}
+.contact-page__managers-title {
+  margin-top: -22px;
+}
+.contact-page__managers-img {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+.contact-page__managers-name {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+.contact-page__managers-contact {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+.address {
+  padding: 20px;
+  background: #fff;
 }
 body {
   margin: 0;
@@ -1857,7 +1956,7 @@ body {
   width: 440px;
   padding: 10px 0;
   margin: 0 auto;
-  margin-top: -25px;
+  margin-top: -28px;
   text-align: center;
   text-transform: uppercase;
   border: 3px solid #dadada;

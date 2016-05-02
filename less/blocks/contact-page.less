@@ -1,8 +1,12 @@
 .contact-page {
 	background: url("../../img/aboutbg.jpg");
 	margin-top: -10px;
+
+	&__tabs {
+			margin-bottom: 90px;
+		}
 	
-		&__tabs-link {
+	&__tabs-link {
 		margin-right: 24px;
 		display: inline-block;
 		background: #dadada;
@@ -29,6 +33,10 @@
 
 	&__tabs-content {
 		background: #fff;
+		font-size: 18px;
+		line-height: 16px * 1.3;
+		padding-bottom: 45px;
+
 	}
 
 	&__tabs-col {
@@ -41,8 +49,8 @@
 
 	&__tabs-text {
 		min-height: 50px;
-		margin: 20px 20px;
-		padding: 0 20px;
+		margin: 0px 20px;
+		padding: 20px 20px;
 
 	}
 
@@ -50,6 +58,119 @@
 		border-top: 5px solid #d1d1d1;
 		border-bottom: 5px solid #d1d1d1;
 	}
+
+	&__sales {
+		border-top: 5px solid #dadada;
+		background: #fff;
+		margin-bottom: 40px;
+		padding: 0 40px;
+	}
+
+	&__sales-title {
+		margin-top: -30px;
+	} 
+
+
+	&__sales-item:first-child {
+		border-bottom: 4px solid #dadada;
+		width: 100%;
+	}
+
+	&__sales-item:first-child &__sales-img {
+		display: inline-block;
+		width: 33%;
+		width: 200px;
+		height: 200px;
+	}
+
+	&__sales-item:first-child &__sales-name {
+		display: inline-block;
+		width: 600px;
+		width: 200px;
+		height: 200px;
+	}
+
+	&__sales-item:first-child &__sales-contact, 
+	 {
+		display: inline-block;
+		width: 400px;
+	}
+	
+	
+
+
+
+	&__sales-item {
+		display: inline-block;
+		width: 45%;
+		margin-right: 20px;
+	}
+
+	&__sales-item:last-child {
+		margin-right: 0;
+	}
+
+	&__sales-img {
+		width: 200px;
+		height: 250px;
+		margin-right: 40px;
+		float: left;
+		vertical-align: middle;
+	}
+
+
+	&__production {
+		border-top: 5px solid #dadada;
+		background: #fff;
+		margin-bottom: 40px;
+		padding: 0 40px 40px 40px;
+	}
+
+	&__production-title {
+		margin-top: -30px;
+	} 
+	
+	&__production-item {
+		display: inline-block;
+		width: 45%;
+		margin-right: 20px;
+	}
+
+		&__production-img {
+		width: 200px;
+		height: 250px;
+		margin-right: 40px;
+		float: left;
+		vertical-align: middle;
+	}
+
+	&__managers {
+		border-top: 5px solid #dadada;
+		background: #fff;
+		margin-bottom: 30px;
+		padding: 0 40px 40px 40px;
+	}
+
+	&__managers-title {
+		margin-top: -22px;
+	} 
+
+	&__managers-img {
+		display: inline-block;
+		width: 33%;
+		vertical-align: middle;
+	}
+	&__managers-name {
+		display: inline-block;
+		width: 33%;
+		vertical-align: middle;
+	}
+	&__managers-contact {
+		display: inline-block;
+		width: 33%;
+		vertical-align: middle;
+	}
+
 
 
 }
