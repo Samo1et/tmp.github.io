@@ -3,10 +3,6 @@
 	margin-top: -10px;
 	padding-bottom: 40px;
 
-	&__tabs {
-
-	}
-
 	&__catalog {
 		background: #fff;
 		margin-bottom: 60px;
@@ -32,6 +28,23 @@
 	}
 	&__order-text {
 		padding: 40px;
+	}
+	&__catalog-subtext {
+		position: relative;
+		padding: 40px 70px;
+		margin-left: 40px;
+		font-size: 20px;
+		color: #0039c8;
+	}
+
+	&__catalog-subtext::after {
+		content: '';
+		position: absolute;
+		top: 24px;
+		left: 0px;
+		width: 50px;
+		height: 50px;
+		background: url("../../img/icons.png") no-repeat -240px 0px;
 	}
 
 }

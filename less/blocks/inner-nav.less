@@ -1,4 +1,6 @@
 .inner-nav {
+	position: absolute;
+	bottom: -15px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 0px;
@@ -23,11 +25,13 @@
 	&__item::before {
 		content: '';
 		position: absolute;
+		top: -4px;
 		right: -1px;
 		width: 1px;
 		height: 35px;
 		background-color: #001b61;
 		border-right: 1px solid #0068ff;
+		z-index: 1000;
 	}
 
 	&__item:last-child::before {
