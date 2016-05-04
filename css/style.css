@@ -366,7 +366,7 @@ textarea {
 }
 @font-face {
   font-family: "Optima Cyr";
-  src: url("../../fonts/optima.woff") format("woff");
+  src: url("../fonts/optima.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -374,7 +374,7 @@ textarea {
   margin: 0 auto;
   height: 900px;
   color: #fff;
-  background: #08173d url("../../img/headerbg.jpg") repeat-x center center;
+  background: #08173d url("../img/headerbg.jpg") repeat-x center center;
 }
 .page-header__search {
   position: relative;
@@ -401,7 +401,7 @@ textarea {
   right: 156px;
   width: 25px;
   height: 25px;
-  background: url("../../img/search.png") no-repeat;
+  background: url("../img/search.png") no-repeat;
 }
 .page-header__logo {
   position: relative;
@@ -417,7 +417,7 @@ textarea {
   bottom: 35px;
   left: 50%;
   margin-left: -354px;
-  background: url("../../img/line.png") no-repeat;
+  background: url("../img/line.png") no-repeat;
 }
 .page-header__title {
   text-align: center;
@@ -431,7 +431,7 @@ textarea {
   margin: 0 auto;
 }
 .page-footer__inner {
-  background: #efefef url("../../img/aboutbg.jpg") repeat;
+  background: #efefef url("../img/aboutbg.jpg") repeat;
   min-height: 150px;
 }
 .page-footer__inner::after {
@@ -472,7 +472,7 @@ textarea {
   margin-bottom: 10px;
   width: 50px;
   height: 68px;
-  background: url("../../img/logofooter.png") no-repeat center top;
+  background: url("../img/logofooter.png") no-repeat center top;
 }
 .page-footer__logo-discription {
   color: #868686;
@@ -512,7 +512,7 @@ textarea {
   top: 80px;
   left: 50%;
   margin-left: -15px;
-  background: url("../../img/down.png") no-repeat;
+  background: url("../img/down.png") no-repeat;
 }
 .main-nav__item {
   margin: 0 25px;
@@ -548,7 +548,7 @@ textarea {
   background-color: rgba(255, 0, 216, 0.5);
 }
 .header-inner {
-  background: #001755 url("../../img/headerinnerbg.jpg") center;
+  background: #001755 url("../img/headerinnerbg.jpg") center;
   min-height: 250px;
   position: relative;
 }
@@ -572,7 +572,7 @@ textarea {
   right: 40px;
   width: 25px;
   height: 25px;
-  background: url("../../img/search.png");
+  background: url("../img/search.png");
 }
 .header-inner__serch input {
   margin-right: 140px;
@@ -596,7 +596,7 @@ textarea {
   right: 156px;
   width: 25px;
   height: 25px;
-  background: url("../../img/search.png") no-repeat;
+  background: url("../img/search.png") no-repeat;
 }
 .header-inner__logo {
   margin-bottom: 32px;
@@ -633,7 +633,7 @@ textarea {
   left: 10px;
   width: 64px;
   height: 64px;
-  background: url("../../img/phone.png") no-repeat;
+  background: url("../img/phone.png") no-repeat;
 }
 .header-inner__address,
 .header-inner__email {
@@ -725,7 +725,7 @@ textarea {
   margin-top: 70px;
   width: 1139px;
   height: 341px;
-  background: url("../../img/slider.jpg") no-repeat;
+  background: url("../img/slider.jpg") no-repeat;
 }
 .slider__btn {
   position: absolute;
@@ -737,7 +737,7 @@ textarea {
 .about {
   min-height: 470px;
   padding-top: 60px;
-  background: #efefef url("../../img/aboutbg.jpg") repeat;
+  background: #efefef url("../img/aboutbg.jpg") repeat;
 }
 .about__title {
   margin: 0;
@@ -813,7 +813,7 @@ textarea {
   margin-left: 5px;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -1120px 0;
+  background: url("../img/sprite.jpg") -1120px 0;
 }
 .using__images {
   margin: 0 auto;
@@ -824,37 +824,37 @@ textarea {
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") 0 0;
+  background: url("../img/sprite.jpg") 0 0;
 }
 .using__image-3 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -224px 0;
+  background: url("../img/sprite.jpg") -224px 0;
 }
 .using__image-4 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -448px 0;
+  background: url("../img/sprite.jpg") -448px 0;
 }
 .using__image-5 {
   margin-right: 5px;
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -672px 0;
+  background: url("../img/sprite.jpg") -672px 0;
 }
 .using__image-6 {
   float: left;
   width: 224px;
   height: 200px;
-  background: url("../../img/sprite.jpg") -896px 0;
+  background: url("../img/sprite.jpg") -896px 0;
 }
 .parthners {
-  background: #022f6f url("../../img/parthnersbg.jpg");
+  background: #022f6f url("../img/parthnersbg.jpg");
   padding-top: 10px;
 }
 .parthners__title {
@@ -931,7 +931,7 @@ textarea {
   float: left;
   width: 250px;
   height: 200px;
-  background: url("../../img/foto.png") no-repeat;
+  background: url("../img/foto.png") no-repeat;
 }
 .news__item-content {
   width: 280px;
@@ -959,7 +959,7 @@ textarea {
 }
 .feedback {
   padding-top: 90px;
-  background: #012a69 url("../../img/formbg.jpg") repeat-x;
+  background: #012a69 url("../img/formbg.jpg") repeat-x;
   padding-bottom: 45px;
 }
 .feedback__title {
@@ -1039,7 +1039,7 @@ textarea {
   height: 30px;
   top: -1px;
   left: 6px;
-  background: url("../../img/icons.png") no-repeat -32px 3px;
+  background: url("../img/icons.png") no-repeat -32px 3px;
 }
 .feedback__form-manager::after {
   content: '';
@@ -1048,7 +1048,7 @@ textarea {
   height: 30px;
   top: 0px;
   left: 5px;
-  background: url("../../img/icons.png") no-repeat -32px -27px;
+  background: url("../img/icons.png") no-repeat -32px -27px;
 }
 .feedback__form-number::after {
   content: '';
@@ -1057,7 +1057,7 @@ textarea {
   height: 30px;
   top: 0px;
   left: 5px;
-  background: url("../../img/icons.png") no-repeat -64px 3px;
+  background: url("../img/icons.png") no-repeat -64px 3px;
 }
 .feedback__form-email::after {
   content: '';
@@ -1066,7 +1066,7 @@ textarea {
   height: 30px;
   top: 0px;
   left: 5px;
-  background: url("../../img/icons.png") no-repeat -64px -27px;
+  background: url("../img/icons.png") no-repeat -64px -27px;
 }
 .contact {
   position: relative;
@@ -1129,7 +1129,7 @@ textarea {
   height: 20px;
   left: 0;
   top: 2px;
-  background: url("../../img/icons.png") no-repeat 3px -3px;
+  background: url("../img/icons.png") no-repeat 3px -3px;
 }
 .contact__e-mail::after {
   content: '';
@@ -1138,13 +1138,13 @@ textarea {
   height: 30px;
   left: 0;
   top: 2px;
-  background: url("../../img/icons.png") no-repeat 2px -28px;
+  background: url("../img/icons.png") no-repeat 2px -28px;
 }
 .map {
   position: relative;
   padding-top: 100px;
   min-height: 349px;
-  background: url("../../img/map.jpg") no-repeat center top;
+  background: url("../img/map.jpg") no-repeat center top;
 }
 .map::after {
   content: '';
@@ -1153,7 +1153,7 @@ textarea {
   height: 150px;
   top: 30px;
   left: 57%;
-  background: url("../../img/marker.png") no-repeat;
+  background: url("../img/marker.png") no-repeat;
 }
 .subnav {
   background-color: #2f2f2f;
@@ -1224,7 +1224,7 @@ textarea {
   border: 2px solid #e19be9;
 }
 .products {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
 }
 .products__item,
@@ -1295,7 +1295,7 @@ textarea {
   bottom: -5px;
   width: 40px;
   height: 30px;
-  background: url("../../img/icons.png") no-repeat -128px -28px;
+  background: url("../img/icons.png") no-repeat -128px -28px;
 }
 .breadcrumbs__link {
   padding-right: 10px;
@@ -1306,7 +1306,7 @@ textarea {
   color: #0083c6;
 }
 .masterbatch {
-  background: url("../../img/aboutbg.jpg") repeat;
+  background: url("../img/aboutbg.jpg") repeat;
   margin-top: -10px;
 }
 .masterbatch__tabs {
@@ -1385,7 +1385,7 @@ textarea {
   border-top: 5px solid #dadada;
 }
 .masterbatch-black {
-  background: url("../../img/aboutbg.jpg") repeat;
+  background: url("../img/aboutbg.jpg") repeat;
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1426,10 +1426,10 @@ textarea {
   left: 0px;
   width: 50px;
   height: 50px;
-  background: url("../../img/icons.png") no-repeat -240px 0px;
+  background: url("../img/icons.png") no-repeat -240px 0px;
 }
 .about-company {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1459,7 +1459,7 @@ textarea {
   border-top: 5px solid #dadada;
 }
 .customers {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1521,7 +1521,7 @@ textarea {
   background: #0039c8;
 }
 .page-order {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1593,7 +1593,7 @@ textarea {
   left: -30px;
   width: 20px;
   height: 20px;
-  background: url("../../img/icons.png") no-repeat -164px -2px;
+  background: url("../img/icons.png") no-repeat -164px -2px;
 }
 .page-order__form-inner {
   padding: 40px 0;
@@ -1696,10 +1696,10 @@ textarea {
   left: 30px;
   width: 50px;
   height: 50px;
-  background: url("../../img/icons.png") no-repeat -240px 0px;
+  background: url("../img/icons.png") no-repeat -240px 0px;
 }
 .news-block {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
 }
 .news-block__list ul {
@@ -1773,7 +1773,7 @@ textarea {
   text-align: center;
 }
 .single-news {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1810,7 +1810,7 @@ textarea {
   font-size: 14px;
 }
 .contact-page {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1921,7 +1921,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .contact-page__email::before {
   content: '';
@@ -1930,7 +1930,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 .contact-page__sales-item,
 .contact-page__production-item {
@@ -2033,7 +2033,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .contact-page__managers-email::before {
   content: '';
@@ -2042,7 +2042,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 .contact-page__managers-address::before {
   content: '';
@@ -2051,7 +2051,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -297px 1px;
+  background: url("../img/icons.png") no-repeat -297px 1px;
 }
 .contact-page__managers-url::before {
   content: '';
@@ -2060,7 +2060,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -297px -30px;
+  background: url("../img/icons.png") no-repeat -297px -30px;
 }
 .contact-page__managers-address,
 .contact-page__managers-number,
@@ -2145,7 +2145,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .address__contact-mail::before {
   content: '';
@@ -2154,7 +2154,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 body {
   margin: 0;
