@@ -64,7 +64,7 @@
 							<input type="checkbox" name="black" id="black" checked> 
 							<label class="page-order__form-checkbox" for="black" >Черные суперконцентраты</label>
 							
-							<div class="page-order__form-inner">
+							<div class="page-order__form-order-black">
 								<select name="color" id="color">
 									<option value="Выберите марку">Выберите марку</option>
 								</select>		
@@ -82,11 +82,39 @@
 								<input type="checkbox" name="white" id="white"> 
 								<label class="page-order__form-checkbox" for="white">Белые суперконцентраты</label>	
 							</div>
+
+							<div class="page-order__form-order-white">
+								<select name="color" id="color">
+									<option value="Выберите марку">Выберите марку</option>
+								</select>		
+								
+								<label >
+									<input type="number" name="mass" placeholder="Кол-во"> кг.	
+								</label>
+								
+								<button class="page-order__form-btn">Добавить</button>	
+								
+								<a class="page-order__form-link" href="products.html">Подробнее о марках</a>
+							</div>
 							
 							<div class="page-order__form-inner">
 								
 									<input type="checkbox" name="colors" id="colors">
 								<label class="page-order__form-checkbox" for="colors"> Цветные суперконцентраты</label>	
+							</div>
+
+							<div class="page-order__form-order-color">
+								<select name="color" id="color">
+									<option value="Выберите марку">Выберите марку</option>
+								</select>		
+								
+								<label >
+									<input type="number" name="mass" placeholder="Кол-во"> кг.	
+								</label>
+								
+								<button class="page-order__form-btn">Добавить</button>	
+								
+								<a class="page-order__form-link" href="products.html">Подробнее о марках</a>
 							</div>
 							
 							<h2 class="page-order__form-title">Доставка</h2>	
@@ -135,7 +163,8 @@
 					<div class="page-footer__logo-image"></div>
 					<div class="page-footer__logo-discription">ТомскМеталлоПласт</div>
 				</div>
-				<div class="page-footer__number">тел.: 8(3822) 23-12-52 <br> E-mail: 60@0070.ru</div>
+				<div class="page-footer__number">тел.: 8(3822) 23-12-52 <br></div>
+				<div class="page-footer__email">E-mail: 60@0070.ru</div >
 			</div>
 		</div>
 	</footer>
