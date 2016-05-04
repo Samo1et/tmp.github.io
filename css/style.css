@@ -1413,7 +1413,7 @@ textarea {
   left: 0px;
   width: 50px;
   height: 50px;
-  background: url("../../img/icons.png") no-repeat -240px 0px;
+  background: url("../img/icons.png") no-repeat -240px 0px;
 }
 .about-company {
   background: url("../img/aboutbg.jpg");
@@ -1791,7 +1791,7 @@ textarea {
   font-size: 14px;
 }
 .contact-page {
-  background: url("../../img/aboutbg.jpg");
+  background: url("../img/aboutbg.jpg");
   margin-top: -10px;
   padding-bottom: 40px;
 }
@@ -1902,7 +1902,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .contact-page__email::before {
   content: '';
@@ -1911,7 +1911,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 .contact-page__sales-item,
 .contact-page__production-item {
@@ -2014,7 +2014,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .contact-page__managers-email::before {
   content: '';
@@ -2023,7 +2023,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 .contact-page__managers-address::before {
   content: '';
@@ -2032,7 +2032,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -297px 1px;
+  background: url("../img/icons.png") no-repeat -297px 1px;
 }
 .contact-page__managers-url::before {
   content: '';
@@ -2041,7 +2041,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -297px -30px;
+  background: url("../img/icons.png") no-repeat -297px -30px;
 }
 .contact-page__managers-address,
 .contact-page__managers-number,
@@ -2126,7 +2126,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px 0px;
+  background: url("../img/icons.png") no-repeat -100px 0px;
 }
 .address__contact-mail::before {
   content: '';
@@ -2135,7 +2135,7 @@ textarea {
   left: 0;
   width: 25px;
   height: 25px;
-  background: url("../../img/icons.png") no-repeat -100px -30px;
+  background: url("../img/icons.png") no-repeat -100px -30px;
 }
 body {
   margin: 0;
