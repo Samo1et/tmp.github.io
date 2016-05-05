@@ -60,13 +60,25 @@
 					<div class="page-order__tabs-content">
 						<form class="page-order__form" action="echo" method="POST">
 							<h2 class="page-order__form-title">выбор продукции</h2>
-												
-							<input type="checkbox" name="black" id="black" checked> 
-							<label class="page-order__form-checkbox" for="black" >Черные суперконцентраты</label>
-							
-							<div class="page-order__form-order-black page-order__form-order">
+							<div class="page-order__form-inner">					
+							<input type="checkbox" name="black" id="black"> 
+							<label class="page-order__form-checkbox black-checkbox" for="black" >Черные суперконцентраты</label>
+							</div>
+							<div class="page-order__form-order-black page-order__form-order--closed">
 								<select name="color" id="color">
 									<option value="Выберите марку">Выберите марку</option>
+									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
+									
+									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+
+									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
 								</select>		
 								
 								<label >
@@ -78,12 +90,24 @@
 							
 							<div class="page-order__form-inner">
 								<input type="checkbox" name="white" id="white"> 
-								<label class="page-order__form-checkbox" for="white">Белые суперконцентраты</label>	
+								<label class="page-order__form-checkbox white-checkbox" for="white">Белые суперконцентраты</label>	
 							</div>
 
-							<div class="page-order__form-order-white">
+							<div class="page-order__form-order-white page-order__form-order--closed">
 								<select name="color" id="color">
 									<option value="Выберите марку">Выберите марку</option>
+									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
+									
+									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+
+									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
 								</select>		
 								
 								<label >
@@ -97,12 +121,24 @@
 							<div class="page-order__form-inner">
 								
 									<input type="checkbox" name="colors" id="colors">
-								<label class="page-order__form-checkbox" for="colors"> Цветные суперконцентраты</label>	
+								<label class="page-order__form-checkbox colors-checkbox" for="colors"> Цветные суперконцентраты</label>	
 							</div>
 
-							<div class="page-order__form-order-color">
+							<div class="page-order__form-order-colors page-order__form-order--closed">
 								<select name="color" id="color">
 									<option value="Выберите марку">Выберите марку</option>
+									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
+									
+									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+
+									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
 								</select>		
 								
 								<label >
@@ -168,10 +204,46 @@
 		</div>
 	</footer>
 <script>
-		var checkBoxBlack = document.querySelector('#black');
+		var checkBoxBlack = document.querySelector('.black-checkbox');
+		var checkBoxWhite = document.querySelector('.white-checkbox');
+		var checkBoxColors = document.querySelector('.colors-checkbox');
 		var formOrderBlack = document.querySelector('.page-order__form-order-black');
-		var check = checkBoxBlack.attributes[3].name;
-		console.log(check);
+		var formOrderWhite = document.querySelector('.page-order__form-order-white');
+		var formOrderColors = document.querySelector('.page-order__form-order-colors');
+
+		checkBoxBlack.classList.remove('black-checkbox--nojs');
+		checkBoxWhite.classList.remove('white-checkbox--nojs');
+		checkBoxColors.classList.remove('colors-checkbox--nojs');
+
+		checkBoxBlack.addEventListener('click', function() {
+			if (formOrderBlack.classList.contains('page-order__form-order--closed')) {
+        formOrderBlack.classList.remove('page-order__form-order--closed');
+        formOrderBlack.classList.add('page-order__form-order--opened');
+      } else {
+      	formOrderBlack.classList.add('page-order__form-order--closed');
+      	formOrderBlack.classList.remove('page-order__form-order--opened'); 
+      	 }
+    });
+
+    	checkBoxWhite.addEventListener('click', function() {
+			if (formOrderWhite.classList.contains('page-order__form-order--closed')) {
+        formOrderWhite.classList.remove('page-order__form-order--closed');
+        formOrderWhite.classList.add('page-order__form-order--opened');
+      } else {
+      	formOrderWhite.classList.add('page-order__form-order--closed');
+      	formOrderWhite.classList.remove('page-order__form-order--opened'); 
+      	 }
+    });
+
+    	checkBoxColors.addEventListener('click', function() {
+			if (formOrderColors.classList.contains('page-order__form-order--closed')) {
+        formOrderColors.classList.remove('page-order__form-order--closed');
+        formOrderColors.classList.add('page-order__form-order--opened');
+      } else {
+      	formOrderColors.classList.add('page-order__form-order--closed');
+      	formOrderColors.classList.remove('page-order__form-order--opened'); 
+      	 }
+    });
 		
 
 </script>
