@@ -91,9 +91,23 @@
 		border-top: 4px solid #d3d3d3 ;
 	}
 
+	&__form-center {
+		padding: 40px 0;
+		border-top: 4px solid #d3d3d3 ;
+		text-align: center;
+	}
+
+
 	&__form-order-black, &__form-order-white, &__form-order-color {
 		padding: 40px 0;
-		
+	}
+
+	&__form-order--closed {
+		display: none;
+	}
+
+	&__form-order--opened {
+		display: block;
 	}
 
 	&__form-inner:first-of-type {
@@ -111,7 +125,7 @@
 
 	&__form-btn {
 		padding: 10px 30px;
-		margin: 0 30px;
+		margin: 0 auto;
 		border: 3px solid #0039c8;
 		border-radius: 30px;
 		text-transform: uppercase;
