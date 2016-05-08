@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>On-line заказ</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/common.js"></script>
 </head>
 <body>
 	<header class="header-inner">
@@ -85,9 +86,16 @@
 									<input type="number" name="mass" placeholder="Кол-во"> кг	
 								</label>
 								
+								<input class="page-order__btn-plus-black" type="button" value="+" onclick="set()" />
+								
 								<a class="page-order__form-link" href="masterbatch.html">Подробнее о марках</a>
+								
+								<div id="addBlackform"></div>
+								
 							</div>
-							
+													
+								
+
 							<div class="page-order__form-inner">
 								<input type="checkbox" name="white" id="white"> 
 								<label class="page-order__form-checkbox white-checkbox" for="white">Белые суперконцентраты</label>	
@@ -203,6 +211,7 @@
 			</div>
 		</div>
 	</footer>
+	
 <script>
 		var checkBoxBlack = document.querySelector('.black-checkbox');
 		var checkBoxWhite = document.querySelector('.white-checkbox');
@@ -215,35 +224,7 @@
 		checkBoxWhite.classList.remove('white-checkbox--nojs');
 		checkBoxColors.classList.remove('colors-checkbox--nojs');
 
-		checkBoxBlack.addEventListener('click', function() {
-			if (formOrderBlack.classList.contains('page-order__form-order--closed')) {
-        formOrderBlack.classList.remove('page-order__form-order--closed');
-        formOrderBlack.classList.add('page-order__form-order--opened');
-      } else {
-      	formOrderBlack.classList.add('page-order__form-order--closed');
-      	formOrderBlack.classList.remove('page-order__form-order--opened'); 
-      	 }
-    });
-
-    	checkBoxWhite.addEventListener('click', function() {
-			if (formOrderWhite.classList.contains('page-order__form-order--closed')) {
-        formOrderWhite.classList.remove('page-order__form-order--closed');
-        formOrderWhite.classList.add('page-order__form-order--opened');
-      } else {
-      	formOrderWhite.classList.add('page-order__form-order--closed');
-      	formOrderWhite.classList.remove('page-order__form-order--opened'); 
-      	 }
-    });
-
-    	checkBoxColors.addEventListener('click', function() {
-			if (formOrderColors.classList.contains('page-order__form-order--closed')) {
-        formOrderColors.classList.remove('page-order__form-order--closed');
-        formOrderColors.classList.add('page-order__form-order--opened');
-      } else {
-      	formOrderColors.classList.add('page-order__form-order--closed');
-      	formOrderColors.classList.remove('page-order__form-order--opened'); 
-      	 }
-    });
+		scrinBlock();
 		
 
 </script>
