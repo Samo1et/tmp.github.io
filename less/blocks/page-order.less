@@ -103,7 +103,7 @@
 
 
 	&__form-order-black, &__form-order-white, &__form-order-colors {
-		padding: 40px 0;
+		padding: 20px 0;
 	}
 
 	&__form-order--closed {
@@ -225,9 +225,9 @@
 		background: url("../../img/icons.png") no-repeat -240px 0px;
 	}
 
-	&__btn-plus-black {
-		padding: 0;
-		margin: 0;
+	&__btn-plus-black,
+	&__btn-plus-white,
+	&__btn-plus-colors {
 		margin-left: 20px;
 		padding: 6px 10px;
 		display: inline-block;
@@ -235,16 +235,28 @@
 		border: 3px solid #0039c8;
 		border-radius: 50%;
 		font-size: 31px;
-		height: 42px;
+		height: 26px;
 		font-weight: 700;
 		outline: none;
 		background: #fff;
 	}
 
-	&__btn-plus-black:hover {
+	&__btn-plus-black:hover,
+	&__btn-plus-white:hover,
+	&__btn-plus-colors:hover {
 		color: #fff;
 		background-color: #0039c8;
 	}
+
+	&__black-inner, &__white-inner ,&__colors-inner {
+		display: inline-block;
+		padding: 20px 0;
+	}
+
+	&__add-form {
+		width: 500px;
+	}
+
 
 
 }

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>On-line заказ</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -17,9 +18,9 @@
 				<h1 class="header-inner__title">ТомскМеталлоПласт</h1>
 			</div>
 			<div class="header-inner__contact">
-					<div class="header-inner__number">8 (3822) 23-12-52</div>
-					<div class="header-inner__address">г. Томск, ул. Ракетная, 17</div>
-					<div class="header-inner__email">E-mail: 60@0070.ru</div>	
+				<div class="header-inner__number">8 (3822) 23-12-52</div>
+				<div class="header-inner__address">г. Томск, ул. Ракетная, 17</div>
+				<div class="header-inner__email">E-mail: 60@0070.ru</div>	
 			</div>
 			<nav class="inner-nav">
 				<ul class="inner-nav__list">
@@ -62,39 +63,37 @@
 						<form class="page-order__form" action="echo" method="POST">
 							<h2 class="page-order__form-title">выбор продукции</h2>
 							<div class="page-order__form-inner">					
-							<input type="checkbox" name="black" id="black"> 
-							<label class="page-order__form-checkbox black-checkbox" for="black" >Черные суперконцентраты</label>
+								<input type="checkbox" name="black" id="black"> 
+								<label class="page-order__form-checkbox black-checkbox" for="black" >Черные суперконцентраты</label>
 							</div>
 							<div class="page-order__form-order-black page-order__form-order--closed">
-								<select name="color" id="color">
-									<option value="Выберите марку">Выберите марку</option>
-									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
-									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
-									
-									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
-									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
-									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
-									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+								<div class="page-order__black-inner" id="black_form">
+									<select name="color" id="color">
+										<option value="Выберите марку">Выберите марку</option>
+										<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+										<option value="FMb 11130.00/F">FMb 11130.00/F</option>
 
-									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-								</select>		
-								
-								<label >
-									<input type="number" name="mass" placeholder="Кол-во"> кг	
-								</label>
-								
-								<input class="page-order__btn-plus-black" type="button" value="+" onclick="set()" />
+										<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+										<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+										<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+										<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+
+										<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+										<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									</select>		
+
+									<label >
+										<input type="number" name="mass" placeholder="Кол-во"> кг	
+									</label>
+								</div>
+								<div class="page-order__btn-plus-black"  >+</div>
 								
 								<a class="page-order__form-link" href="masterbatch.html">Подробнее о марках</a>
-								
-								<div id="addBlackform"></div>
-								
 							</div>
-													
-								
+							<div class="page-order__add-form" id="addBlackform"></div>						
+
 
 							<div class="page-order__form-inner">
 								<input type="checkbox" name="white" id="white"> 
@@ -102,61 +101,68 @@
 							</div>
 
 							<div class="page-order__form-order-white page-order__form-order--closed">
-								<select name="color" id="color">
-									<option value="Выберите марку">Выберите марку</option>
-									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
-									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
-									
-									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
-									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
-									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
-									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+								<div class="page-order__white-inner" id="white_form">
+									<select name="color" id="color">
+										<option value="Выберите марку">Выберите марку</option>
+										<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+										<option value="FMb 11130.00/F">FMb 11130.00/F</option>
 
-									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-								</select>		
-								
-								<label >
-									<input type="number" name="mass" placeholder="Кол-во"> кг	
-								</label>
-								
-															
+										<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+										<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+										<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+										<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+
+										<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+										<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									</select>		
+
+									<label >
+										<input type="number" name="mass" placeholder="Кол-во"> кг	
+									</label>
+								</div>
+								<div class="page-order__btn-plus-white"  >+</div>
+
 								<a class="page-order__form-link" href="masterbatch.html">Подробнее о марках</a>
 							</div>
+
+							<div class="page-order__add-form" id="addWhiteForm"></div>		
 							
 							<div class="page-order__form-inner">
 								
-									<input type="checkbox" name="colors" id="colors">
+								<input type="checkbox" name="colors" id="colors">
 								<label class="page-order__form-checkbox colors-checkbox" for="colors"> Цветные суперконцентраты</label>	
 							</div>
 
 							<div class="page-order__form-order-colors page-order__form-order--closed">
-								<select name="color" id="color">
-									<option value="Выберите марку">Выберите марку</option>
-									<option value="FMb 11140.00/F">FMb 11140.00/F</option>
-									<option value="FMb 11130.00/F">FMb 11130.00/F</option>
-									
-									<option value="FMb 12140.00/T">FMb 12140.00/T</option>
-									<option value="FMb 12130.00/T">FMb 12130.00/T</option>
-									<option value="FMb 12240.00/T">FMb 12240.00/T</option>
-									<option value="FMb 12230.00/T">FMb 12230.00/T</option>
+								<div class="page-order__colors-inner" id="colors_form">
+									<select name="color" id="color">
+										<option value="Выберите марку">Выберите марку</option>
+										<option value="FMb 11140.00/F">FMb 11140.00/F</option>
+										<option value="FMb 11130.00/F">FMb 11130.00/F</option>
 
-									<option value="FMb 13230.00/T">FMb 13230.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-									<option value="FMb 13130.00/T">FMb 13130.00/T</option>
-									<option value="FMb 13240.00/T">FMb 13240.00/T</option>
-								</select>		
-								
-								<label >
-									<input type="number" name="mass" placeholder="Кол-во"> кг	
-								</label>
+										<option value="FMb 12140.00/T">FMb 12140.00/T</option>
+										<option value="FMb 12130.00/T">FMb 12130.00/T</option>
+										<option value="FMb 12240.00/T">FMb 12240.00/T</option>
+										<option value="FMb 12230.00/T">FMb 12230.00/T</option>
 
-																													
+										<option value="FMb 13230.00/T">FMb 13230.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+										<option value="FMb 13130.00/T">FMb 13130.00/T</option>
+										<option value="FMb 13240.00/T">FMb 13240.00/T</option>
+									</select>		
+
+									<label >
+										<input type="number" name="mass" placeholder="Кол-во"> кг	
+									</label>
+								</div>
+								<div class="page-order__btn-plus-colors"  >+</div>
+
 								<a class="page-order__form-link" href="masterbatch.html">Подробнее о марках</a>
 							</div>
 							
+							<div class="page-order__add-form" id="addColorsForm"></div>
 							
 							<div class="page-order__form-inner">
 								<h2 class="page-order__form-title page-order__form-title--pading-none">Доставка</h2>	
@@ -208,25 +214,72 @@
 				</div>
 				<div class="page-footer__number">тел.: 8(3822) 23-12-52 <br></div>
 				<div class="page-footer__email">E-mail: 60@0070.ru</div >
+				</div>
 			</div>
-		</div>
-	</footer>
-	
-<script>
-		var checkBoxBlack = document.querySelector('.black-checkbox');
-		var checkBoxWhite = document.querySelector('.white-checkbox');
-		var checkBoxColors = document.querySelector('.colors-checkbox');
-		var formOrderBlack = document.querySelector('.page-order__form-order-black');
-		var formOrderWhite = document.querySelector('.page-order__form-order-white');
-		var formOrderColors = document.querySelector('.page-order__form-order-colors');
+		</footer>
 
-		checkBoxBlack.classList.remove('black-checkbox--nojs');
-		checkBoxWhite.classList.remove('white-checkbox--nojs');
-		checkBoxColors.classList.remove('colors-checkbox--nojs');
+		<script>
+			$("#black").bind("change click", function () {
+				if (this.checked){
+					$('.page-order__form-order-black').show();
+					$('#addBlackform').show();
+				} 
+				else {
+					$('.page-order__form-order-black').hide();
+					$('#addBlackform').hide();
+				}});
 
-		scrinBlock();
-		
+			$("#white").bind("change click", function () {
+				if (this.checked){
+					$('.page-order__form-order-white').show();
+					$('#addWhiteForm').show();
+				} 
+				else {
+					$('.page-order__form-order-white').hide();
+					$('#addWhiteForm').hide();
+				}});
 
-</script>
-</body>
-</html>
+			$("#colors").bind("change click", function () {
+				if (this.checked){
+					$('.page-order__form-order-colors').show();
+					$('#addColorsForm').show();
+				} 
+				else {
+					$('.page-order__form-order-colors').hide();
+					$('#addColorsForm').hide();
+				}});
+
+			var numBlackForm = 1,numWhiteForm = 1,numColorsForm = 1;
+
+			$('.page-order__btn-plus-black').click(function() {
+				if (numBlackForm < 4) {
+					$('#black_form').clone()
+					.appendTo('#addBlackform')
+					.attr('id','blackFormClone'+numBlackForm);
+					numBlackForm++;
+				}
+			});
+
+			$('.page-order__btn-plus-white').click(function() {
+				if (numWhiteForm < 4) {
+					$('#white_form').clone()
+					.appendTo('#addWhiteForm')
+					.attr('id','whiteFormClone'+numWhiteForm);
+					numWhiteForm++;
+				}
+			});			
+
+			$('.page-order__btn-plus-colors').click(function() {
+				if (numColorsForm < 4) {
+					$('#colors_form').clone()
+					.appendTo('#addColorsForm')
+					.attr('id','whiteFormClone'+numColorsForm);
+					numColorsForm++;
+				}
+			});
+
+
+
+		</script>
+	</body>
+	</html>

@@ -1610,7 +1610,7 @@ textarea {
 .page-order__form-order-black,
 .page-order__form-order-white,
 .page-order__form-order-colors {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .page-order__form-order--closed {
   display: none;
@@ -1712,9 +1712,9 @@ textarea {
   height: 50px;
   background: url("../../img/icons.png") no-repeat -240px 0px;
 }
-.page-order__btn-plus-black {
-  padding: 0;
-  margin: 0;
+.page-order__btn-plus-black,
+.page-order__btn-plus-white,
+.page-order__btn-plus-colors {
   margin-left: 20px;
   padding: 6px 10px;
   display: inline-block;
@@ -1722,14 +1722,25 @@ textarea {
   border: 3px solid #0039c8;
   border-radius: 50%;
   font-size: 31px;
-  height: 42px;
+  height: 26px;
   font-weight: 700;
   outline: none;
   background: #fff;
 }
-.page-order__btn-plus-black:hover {
+.page-order__btn-plus-black:hover,
+.page-order__btn-plus-white:hover,
+.page-order__btn-plus-colors:hover {
   color: #fff;
   background-color: #0039c8;
+}
+.page-order__black-inner,
+.page-order__white-inner,
+.page-order__colors-inner {
+  display: inline-block;
+  padding: 20px 0;
+}
+.page-order__add-form {
+  width: 500px;
 }
 .news-block {
   background: url("../../img/aboutbg.jpg");
