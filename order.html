@@ -5,7 +5,7 @@
 	<title>On-line заказ</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/common.js"></script>
+	
 </head>
 <body>
 	<header class="header-inner">
@@ -170,10 +170,12 @@
 								<label class="page-order__form-radio" for="delivery" >Самовывоз</label>
 								
 								<input type="radio" name="delivery" id="company"> 
-								<label class="page-order__form-radio" for="company">Транспортной компанией</label>	
+								<label class="page-order__form-radio" for="company"  data-tooltip="Для осуществления поставки продукции просим отправить по электронной почте карточку предприятия с полными реквизитами компании.">Транспортной компанией</label>	
+								<div id="tooltip"></div>
 								
 								<input type="radio" name="delivery" id="incity"> 
-								<label class="page-order__form-radio" for="incity">Доставка по городу Томску</label>			
+								<label class="page-order__form-radio" for="incity" data-tooltip="Для осуществления поставки продукции просим отправить по электронной почте карточку предприятия с полными реквизитами компании.">Доставка по городу Томску</label>
+								<div id="tooltip"></div>			
 							</div>
 
 							<div class="page-order__form-center">	
@@ -217,9 +219,9 @@
 				</div>
 			</div>
 		</footer>
-
+		<script src="js/common.js"></script>
 		<script>
-			$("#black").bind("change click", function () {
+					$('#black').bind('change click', function () {
 				if (this.checked){
 					$('.page-order__form-order-black').show();
 					$('#addBlackform').show();
@@ -229,7 +231,7 @@
 					$('#addBlackform').hide();
 				}});
 
-			$("#white").bind("change click", function () {
+			$('#white').bind('change click', function () {
 				if (this.checked){
 					$('.page-order__form-order-white').show();
 					$('#addWhiteForm').show();
@@ -239,7 +241,7 @@
 					$('#addWhiteForm').hide();
 				}});
 
-			$("#colors").bind("change click", function () {
+			$('#colors').bind('change click', function () {
 				if (this.checked){
 					$('.page-order__form-order-colors').show();
 					$('#addColorsForm').show();
@@ -277,9 +279,7 @@
 					numColorsForm++;
 				}
 			});
-
-
-
 		</script>
+
 	</body>
 	</html>
