@@ -166,8 +166,9 @@
 							
 							<div class="page-order__form-inner">
 								<h2 class="page-order__form-title page-order__form-title--pading-none">Доставка</h2>	
-								<input type="radio" name="delivery" id="delivery" checked> 
-								<label class="page-order__form-radio" for="delivery" >Самовывоз</label>
+								<input type="radio" name="delivery" id="delivery"  checked> 
+								<label class="page-order__form-radio" for="delivery" data-tooltip="Для осуществления поставки продукции просим отправить по электронной почте карточку предприятия с полными реквизитами компании.">Самовывоз</label>
+								<div id="tooltip"></div>
 								
 								<input type="radio" name="delivery" id="company"> 
 								<label class="page-order__form-radio" for="company"  data-tooltip="Для осуществления поставки продукции просим отправить по электронной почте карточку предприятия с полными реквизитами компании.">Транспортной компанией</label>	
@@ -254,7 +255,7 @@
 			var numBlackForm = 1,numWhiteForm = 1,numColorsForm = 1;
 
 			$('.page-order__btn-plus-black').click(function() {
-				if (numBlackForm < 4) {
+				if (numBlackForm < 5) {
 					$('#black_form').clone()
 					.appendTo('#addBlackform')
 					.attr('id','blackFormClone'+numBlackForm);
@@ -263,7 +264,7 @@
 			});
 
 			$('.page-order__btn-plus-white').click(function() {
-				if (numWhiteForm < 4) {
+				if (numWhiteForm < 5) {
 					$('#white_form').clone()
 					.appendTo('#addWhiteForm')
 					.attr('id','whiteFormClone'+numWhiteForm);
@@ -272,7 +273,7 @@
 			});			
 
 			$('.page-order__btn-plus-colors').click(function() {
-				if (numColorsForm < 4) {
+				if (numColorsForm < 5) {
 					$('#colors_form').clone()
 					.appendTo('#addColorsForm')
 					.attr('id','whiteFormClone'+numColorsForm);
