@@ -1258,11 +1258,11 @@ textarea {
 }
 .products__title {
   padding-top: 10px;
-  margin-bottom: 50px;
+  min-height: 90px;
   font-size: 30px;
 }
 .products__title span {
-  font-size: 21px;
+  font-size: 26px;
 }
 .products__title::after {
   position: absolute;
@@ -1503,6 +1503,10 @@ textarea {
 .customers__tabs-text--border {
   border-top: 5px solid #d1d1d1;
   border-bottom: 5px solid #d1d1d1;
+  padding: 0 30px;
+}
+.customers__tabs-text--border-one {
+  border-top: 5px solid #d1d1d1;
   padding: 0 30px;
 }
 .customers__tabs-btn {
