@@ -371,10 +371,41 @@ textarea {
   font-weight: 400;
 }
 .page-header {
+  position: relative;
   margin: 0 auto;
   height: 900px;
   color: #fff;
   background: #08173d url("../img/headerbg.jpg") repeat-x center center;
+}
+.page-header__formula {
+  position: relative;
+  width: 1240px;
+  height: 863px;
+  background: url("../img/ch3.png") no-repeat -80px 5px;
+}
+.page-header__formula-c {
+  position: absolute;
+  top: 140px;
+  right: 40px;
+  width: 320px;
+  height: 322px;
+  background: url("../img/formula_c.png") no-repeat center center;
+  animation-name: show;
+  animation-timing-function: cubic-bezier(1, -0.01, 1, 0.65);
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+.page-header__star {
+  position: absolute;
+  top: 386px;
+  left: 300px;
+  width: 100px;
+  height: 100px;
+  background: url("../img/star.png") no-repeat center center;
+  z-index: 100;
+  animation-name: show,rotate;
+  animation-duration: 2s,4s;
+  animation-iteration-count: infinite;
 }
 .page-header__search {
   position: relative;
@@ -2253,4 +2284,34 @@ body {
   opacity: 0.6;
   border-radius: 5px;
   font-size: 16px;
+}
+@keyframes rotate {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(675px);
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  70% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
 }
